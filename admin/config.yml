@@ -330,9 +330,9 @@ collections:
             label: Text
             name: '-53f399f2'
             widget: string
-          - hint: "Original text: Send Us \_Email, key: -13dedffa"
+          - hint: "Original text: Send Us an\_Email, key: -59b30c0d"
             label: Text
-            name: '-13dedffa'
+            name: '-59b30c0d'
             widget: string
           - hint: 'Original text: info@dmi3d.in, key: 424c37f4'
             label: Text
@@ -473,6 +473,10 @@ collections:
             label: Text
             name: '8365120'
             widget: text
+          - hint: 'Original text: Send Us an Email, key: -341f5b8d'
+            label: Text
+            name: '-341f5b8d'
+            widget: string
           - hint: 'Original text: admin@dmi3d.in, key: -e86818d'
             label: Text
             name: '-e86818d'
