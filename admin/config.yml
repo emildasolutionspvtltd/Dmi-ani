@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -28,7 +28,8 @@ collections:
         widget: hidden
         name: layout
         default: '{{slug}}.html'
-      - label: Seo
+      - &ref_0
+        label: Seo
         name: seo
         widget: object
         collapsed: true
@@ -86,6 +87,78 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: blogs
+    label: Blogs
+    folder: cms/blogs
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Blogs Content
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_blogs-featured-image
+        label: Blogs Featured image
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_is-featured-in-blogs-page
+        label: Is featured in Blogs page
+        widget: boolean
+        required: false
+        default: false
+      - hint: ''
+        name: f_index-number
+        label: Index number
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: blogs
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[blogs].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - label: Theme Settings
     name: settings
     identifier_field: title
@@ -208,13 +281,21 @@ collections:
             label: Text
             name: '604'
             widget: string
-          - hint: 'Original text: Contact Us, key: 7f2746de'
+          - hint: 'Original text: Blogs, key: 3d4d4f1'
             label: Text
-            name: 7f2746de
+            name: 3d4d4f1
             widget: string
           - hint: 'Original text: 05, key: 605'
             label: Text
             name: '605'
+            widget: string
+          - hint: 'Original text: Contact Us, key: 7f2746de'
+            label: Text
+            name: 7f2746de
+            widget: string
+          - hint: 'Original text: 06, key: 606'
+            label: Text
+            name: '606'
             widget: string
           - hint: 'Original text: Manufacturing the Future, Today., key: -4168abab'
             label: Text
@@ -935,6 +1016,23 @@ collections:
             label: Text
             name: 3bf3543a
             widget: text
+          - hint: >-
+              Original text: Innovations in 3D Printing: Insights and Trends,
+              key: -26916b1d
+            label: Text
+            name: '-26916b1d'
+            widget: string
+          - hint: >-
+              Original text: "Explore the cutting-edge world of 3D printing with
+              our expert articles. Stay updated with the latest advancements,
+              tips, and industry trends.", key: -65c689c6
+            label: Text
+            name: '-65c689c6'
+            widget: text
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -958,6 +1056,10 @@ collections:
           - hint: 'Original link: /about-us/, key: -766f6c3e'
             label: Link
             name: '-766f6c3e'
+            widget: string
+          - hint: 'Original link: /blogs/, key: 63a5be2d'
+            label: Link
+            name: 63a5be2d
             widget: string
           - hint: 'Original link: /contact-us/, key: 6bfbaa95'
             label: Link
@@ -1774,6 +1876,19 @@ collections:
                 required: false
           - label: Image
             name: '-6f4056ed'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 317f733b
             widget: object
             fields:
               - name: url
