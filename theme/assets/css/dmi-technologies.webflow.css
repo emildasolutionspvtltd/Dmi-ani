@@ -3323,7 +3323,7 @@ a {
   background-color: var(--black);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding: 0;
   position: static;
   bottom: 0%;
@@ -6168,6 +6168,10 @@ a {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .footer_section-copy-copy._1-copy {
+    margin-top: 3rem;
   }
 
   .nav-bar-full-screen-unhidden-copy {
