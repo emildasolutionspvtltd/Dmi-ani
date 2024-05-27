@@ -3,7 +3,7 @@ title: 'Print Pioneers: Celebrating Chuck Hull, Father of 3D Printing'
 slug: print-pioneers-celebrating-chuck-hull-father-of-3d-printing
 updated-on: '2024-05-27T12:53:43.008Z'
 created-on: '2024-05-27T12:01:19.067Z'
-published-on: null
+published-on: '2024-05-27T13:51:26.700Z'
 f_is-featured-in-blogs-page: true
 f_blogs-featured-image:
   url: >-

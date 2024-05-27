@@ -6,7 +6,7 @@ slug: >-
   navigating-the-3d-printing-landscape-global-insights-and-indias-position-in-early-2024
 updated-on: '2024-05-27T12:46:46.972Z'
 created-on: '2024-05-27T12:01:19.067Z'
-published-on: null
+published-on: '2024-05-27T13:51:26.700Z'
 f_is-featured-in-blogs-page: true
 f_index-number: 2
 f_blogs-featured-image:
