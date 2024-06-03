@@ -2537,7 +2537,7 @@ a {
   position: absolute;
 }
 
-.image-3 {
+.mobile_image {
   width: 100%;
   height: 100%;
 }
@@ -4561,7 +4561,7 @@ a {
     height: 5em;
   }
 
-  .image-3 {
+  .mobile_image {
     width: 100%;
     height: 100%;
   }
@@ -6358,14 +6358,14 @@ a {
   }
 
   ._3d_hero_section {
-    height: 100vh;
-    padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 30%;
   }
 
   ._3dh_head {
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto 2rem;
     font-size: 3.6rem;
   }
 
@@ -6406,8 +6406,8 @@ a {
   .process_section {
     border-top-left-radius: 1.5em;
     border-top-right-radius: 1.5em;
-    padding-left: .25rem;
-    padding-right: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .pc1_head {
@@ -6911,7 +6911,7 @@ a {
     width: 220px;
   }
 
-  .image-3 {
+  .mobile_image {
     width: auto;
   }
 
