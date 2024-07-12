@@ -3,6 +3,8 @@ title: "AI and 3D Printing: A Synergy Driving Next-Generation Manufacturing"
 created-on: 2024-06-06T10:40:07.061Z
 updated-on: 2024-06-06T10:40:07.111Z
 published-on: 2024-06-06T10:40:07.147Z
+f_blogs-featured-image:
+  url: /assets/images/oig3.jpeg
 f_is-featured-in-blogs-page: true
 tags: blogs
 layout: "[blogs].html"
