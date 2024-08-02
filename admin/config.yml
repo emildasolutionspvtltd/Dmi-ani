@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1063,6 +1063,26 @@ collections:
             label: Text
             name: '-1539b746'
             widget: string
+          - hint: 'Original text: Get Your 3D Print Now!, key: 40f9370a'
+            label: Text
+            name: 40f9370a
+            widget: string
+          - hint: 'Original text: *Get Your DO Audit for Free!, key: -2779a723'
+            label: Text
+            name: '-2779a723'
+            widget: string
+          - hint: 'Original text: 00, key: 600'
+            label: Text
+            name: '600'
+            widget: string
+          - hint: 'Original text: Min, key: 12e32'
+            label: Text
+            name: '12e32'
+            widget: string
+          - hint: 'Original text: Sec, key: 14431'
+            label: Text
+            name: '14431'
+            widget: string
           - hint: >-
               Original text: Struggling to find reliable 3D printing , key:
               -1d2787d6
@@ -1494,6 +1514,10 @@ collections:
               -2c1682fb
             label: Link
             name: '-2c1682fb'
+            widget: string
+          - hint: 'Original link: https://wa.link/6s6v3y, key: -3bc452bd'
+            label: Link
+            name: '-3bc452bd'
             widget: string
           - hint: 'Original link: tel:8197148093, key: 134b540b'
             label: Link
@@ -2334,19 +2358,6 @@ collections:
                 required: false
           - label: Image
             name: 317f733b
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: fc73b43
             widget: object
             fields:
               - name: url

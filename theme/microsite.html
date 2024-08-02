@@ -29,6 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KCF5H6VW');</script>
   <!--  End Google Tag Manager  -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
         }</style></head>
@@ -51,15 +52,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h1 class="hs-heading">{{ texts.29b9cecc }}<span class="italic-txtspan">{{ texts.671 }}</span> <span class="italic-txtspan">{{ texts.c60188b }}</span>{{ texts.d25 }}<span class="italic-txtspan">{{ texts.-70a0f0a1 }}</span></h1>
         <div class="hs-ryt-wrapper">
           <div class="hs-txt">{{ texts.19172ea4 }}</div>
-          <a href="{{ links.23 }}" class="hs-button w-button">{{ texts.-1539b746 }}</a>
+          <a href="{{ links.-3bc452bd }}" class="hs-button w-button">{{ texts.-1539b746 }}</a>
         </div>
       </div>
     </section>
     <section class="bg-img-mobile">
-      <div class="w-layout-blockcontainer container-3 w-container">
-        <div class="bg-wrapper">
-          <a href="{{ links.23 }}" class="button w-button">{{ texts.-1539b746 }}</a><img loading="lazy" src="{{ images.fc73b43.url }}" alt="{{ images.fc73b43.alt | escape }}" class="image-3">
-        </div>
+      <div class="sticky-wrapper">
+        <a href="{{ links.-3bc452bd }}" class="countdown_content-wrapper w-inline-block">
+          <div class="txt-wrap">
+            <div class="text-block">{{ texts.40f9370a }}</div>
+            <div class="text-block-9">{{ texts.-2779a723 }}</div>
+          </div>
+          <div class="timer-wrapper">
+            <div class="countdown_card">
+              <div class="timer-bg">
+                <div id="minutes" class="timer"><span class="minutes">{{ texts.600 }}</span></div>
+              </div>
+              <div class="margin-top margin-small">
+                <div class="countdown_text">{{ texts.12e32 }}</div>
+              </div>
+            </div>
+            <div class="countdown_card">
+              <div class="timer-bg">
+                <div id="seconds" class="timer"><span class="seconds">{{ texts.600 }}</span></div>
+              </div>
+              <div class="margin-top margin-small">
+                <div class="countdown_text">{{ texts.14431 }}</div>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
     <section class="problem-section">
@@ -377,5 +399,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="/assets/js/webflow.js" type="text/javascript"></script><!--  Google Tag Manager (noscript)  -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCF5H6VW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!--  End Google Tag Manager (noscript)  -->
+  <script>
+  $(document).ready(function () {
+    var initialTime = 6 * 60; // 6 minutes in seconds
+    var currentTime = initialTime;
+    function updateTimer() {
+      if (currentTime <= 0) {
+        // Stop the timer when it runs out
+        clearInterval(timerInterval);
+      }
+      var minutes = Math.floor(currentTime / 60);
+      var seconds = currentTime % 60;
+      // Add leading zeros
+      minutes = (minutes < 10) ? "0" + minutes : minutes;
+      seconds = (seconds < 10) ? "0" + seconds : seconds;
+      // Update the timer display
+      $(".timer .minutes").text(minutes);
+      $(".timer .seconds").text(seconds);
+      // Decrease the current time by 1 second
+      currentTime--;
+    }
+    // Update the timer every second
+    var timerInterval = setInterval(updateTimer, 1000);
+  });
+</script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script></body></html>
