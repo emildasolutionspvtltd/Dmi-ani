@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1518,6 +1518,10 @@ collections:
           - hint: 'Original link: https://wa.link/6s6v3y, key: -3bc452bd'
             label: Link
             name: '-3bc452bd'
+            widget: string
+          - hint: 'Original link: https://wa.link/lsbtao, key: 20755d27'
+            label: Link
+            name: 20755d27
             widget: string
           - hint: 'Original link: tel:8197148093, key: 134b540b'
             label: Link
